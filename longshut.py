@@ -29,7 +29,7 @@ def shutdown(CHANNEL):
         button_press_timer = 0
         break
                 
-GPIO.add_event_detect(CHANNEL, GPIO.FALLING, callback=shutdown, bouncetime=200) #Detect a falling edge on channel 23 and debounce it with 200mSec. This is an interrupt.
+GPIO.add_event_detect(CHANNEL, GPIO.FALLING, callback=shutdown, bouncetime=200) #Detect a falling edge on channel 17 and debounce it with 200mSec. This is an interrupt.
 
 #Make an empty loop to keep the process running while it is waiting for the interrupt. You can add code here or make it sleep to free CPU resources.
 try:
